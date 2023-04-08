@@ -17,6 +17,7 @@ const Footer = () => {
             <a href="https://linkedin.com/in/am-adityam/" className="hover:underline"><AiFillLinkedin size='1.5rem' /> </a>
           </div>
 
+
         </div>
       </footer>
 
