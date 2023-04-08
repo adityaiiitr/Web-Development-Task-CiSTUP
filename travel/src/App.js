@@ -1,5 +1,5 @@
 // import logo from './logo.svg';
-import { Route, Routes, useLocation, useParams } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import './App.css';
 
 import Home from "./pages/Home";
@@ -12,8 +12,10 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <>
+    
     <Header/>
     <Routes>
+      
       <Route exact path="/" element={<Home />} />
       <Route exact path="/mode-choice" element={<Mode />} />
 
