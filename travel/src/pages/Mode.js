@@ -33,15 +33,32 @@ const Mode = () => {
         <table className="border-collapse border-2 border-gray-500 text-center">
         <thead>
             <tr>
-            <th className="border border-gray-500 text-center p-2 bg-red-600">{Data[0].mode_1}
+            <th className="border border-gray-500 text-center p-2 bg-red-600 italic">{Data[0].mode_1}
             <div className='text-center items-center flex justify-center' >
-              {/* <FaBus/> */}
+            <input  id="radio-1" type="radio" value="1" checked={q1 === 1} name="question" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"></input>
+
             </div>
             </th>
-            <th className="border border-gray-500 text-center p-2 bg-blue-600">{Data[0].mode_2}</th>
-            <th className="border border-gray-500 text-center p-2 bg-yellow-600">{Data[0].mode_4}</th>
-            <th className="border border-gray-500 text-center p-2 bg-purple-600">{q1===3?Data[0].mode_8:Data[0].mode_9}</th>
-            <th className="border border-gray-500 text-center p-2 bg-green-600">{q1===5?Data[0].mode_7:Data[0].mode_5}</th>
+            <th className="border border-gray-500 text-center p-2 bg-blue-600 italic">{Data[0].mode_2}
+            <div className='text-center items-center flex justify-center' >
+            <input  id="radio-2" type="radio" value="2" checked={q1 === 2}  name="question" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"></input>
+
+            </div></th>
+            <th className="border border-gray-500 text-center p-2 bg-yellow-600 italic">{Data[0].mode_4}
+            <div className='text-center items-center flex justify-center' >
+            <input  id="radio-3" type="radio" value="3" name="question" checked={q1 === 3}  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"></input>
+
+            </div></th>
+            <th className="border border-gray-500 text-center p-2 bg-purple-600 italic">{q1===3?Data[0].mode_8:Data[0].mode_9}
+            <div className='text-center items-center flex justify-center' >
+            <input  id="radio-4" type="radio" value="4" name="question"  checked={q1 === 4}  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"></input>
+
+            </div></th>
+            <th className="border border-gray-500 text-center p-2 bg-green-600 italic">{q1===5?Data[0].mode_7:Data[0].mode_5}
+            <div className='text-center items-center flex justify-center' >
+            <input  id="radio-5" type="radio" value="5" name="question"  checked={q1 === 5} class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"></input>
+
+            </div></th>
             </tr>
         </thead>
         <tbody>

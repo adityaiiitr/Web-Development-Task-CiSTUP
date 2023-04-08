@@ -13,7 +13,7 @@ const Footer = () => {
             
 
             <div className='flex justify-center text-center items-center w-full mx-auto max-w-screen-xl '>
-            <a href="linkedin.com/in/am-adityam/" className="hover:underline "><AiFillGithub size='1.5rem'/> </a>
+            <a href="https://linkedin.com/in/am-adityam/" className="hover:underline "><AiFillGithub size='1.5rem'/> </a>
             <a href="https://github.com/adityaiiitr" className="hover:underline"><AiFillLinkedin size='1.5rem'/> </a>
             </div>
               
